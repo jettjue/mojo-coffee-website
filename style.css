@@ -4,32 +4,16 @@
 
 body {
     margin: 0px;
-    background-image: url("images/beans.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header {
-    /* background-color: #947b63; */
     display: flex;
     justify-content: space-between;
     padding: 15px;
     position: relative;
     transition: background-color 0.7s ease;
-}
-
-header:hover {
     background-color: #DFD0C0;
-    
-}
 
-header:hover .navbar a {
-    color: #625142;
-
-}
-
-header:hover .navbar a:hover {
-    color: #967d64;
 }
 
 .logo {
@@ -58,7 +42,7 @@ img {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     /* border: 3px solid #625142; */
-    color: white;
+    color: #625142;
     text-decoration: none;
     padding: 5px;
     display: block;
@@ -77,10 +61,8 @@ img {
 .icon-links i {
     /* border: 2px red solid; */
     font-size: 30px;
-    color: white;
     transition: color 0.3s ease;
-
-
+    color: #625142;
 }
 
 .icon-links button {
@@ -89,17 +71,40 @@ img {
     margin: 20px;
 }
 
-header:hover .icon-links i {
+.navbar a:hover, 
+.icon-links i:hover {
+    color: #967d64;
+    cursor: pointer;
+}
+
+body.home {
+    background-image: url("images/beans.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.home header {
+    background-color: transparent;
+}
+
+body.home header:hover {
+    background-color: #DFD0C0;
+}
+
+body.home .navbar a, 
+body.home .icon-links i {
+    color: white;
+}
+
+body.home header:hover .navbar a,
+body.home header:hover .icon-links i {
     color: #625142;
 }
 
-header:hover .icon-links i:hover {
+body.home header:hover .navbar a:hover,
+body.home header:hover .icon-links i:hover {
     color: #967d64;
-    cursor: pointer;
-
 }
-
-
 
 aside {
     width: 20%;
