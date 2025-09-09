@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-image: url("images/beans.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    /* background-color: #947b63; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: relative;
+    transition: background-color 0.7s ease;
+}
+
+header:hover {
+    background-color: #DFD0C0;
+    
+}
+
+header:hover .navbar a {
+    color: #625142;
+
+}
+
+header:hover .navbar a:hover {
+    color: #967d64;
+}
+
+.logo {
+    max-width: 100%;
+    /* border: 2px black solid; */
+    margin: 10px;
+}
+
+img {
+    height: 150px;
+}
+
+.navbar {
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    /* border: 3px solid #625142; */
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin: 25px;
+    transition: color 0.3s ease;
+}
+
+.icon-links {
+    /* border: 2px red solid; */
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.icon-links i {
+    /* border: 2px red solid; */
+    font-size: 30px;
+    color: white;
+    transition: color 0.3s ease;
+
+
+}
+
+.icon-links button {
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+}
+
+header:hover .icon-links i {
+    color: #625142;
+}
+
+header:hover .icon-links i:hover {
+    color: #967d64;
+    cursor: pointer;
+
+}
+
+
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+section {
+    text-align: left;
+    margin-left: 115px;
+    margin-top: 100px;
+    padding: 0 25px;
+    background-color: rgba(228, 218, 208, 0.7);
+    width: 600px;
+    font-size: 20px;
+    font-family: "Kalam";
+    border: black 2px solid;
+}
+
+footer {
+    display: block;
+    clear: both;
+    background-color: hsl(0, 0%, 86%);
+    text-align: center;
+    padding: 25px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+
+    aside, section, article {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* .navbar button { 
+    background-color: #DFD0C0;
+    font-size: 1.2em;
+    color:#625142;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar button:hover {
+    color:#967d64
+}
+*/
+
+
+
+/*
+section {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 150px;
+    margin-top: 125px;
+    padding: 10px 35px;
+    background-color: rgba(228, 218, 208, 0.7);
+    width: 600px;
+    font-size: 20px;
+    border: black 2px solid;
+}
+*/
+
