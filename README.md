@@ -22,6 +22,7 @@ This project is being developed for the purpose of learning various technologies
 * Background image with transparent overlay section
 
 ## Features to Come
+* Contact information and submittable message form
 * Responsive layout for all screen sizes
 * Dynamic transitions and animations for enhanced UX/UI
 * Interactive shopping cart with checkout functionality using Stripe API for secure payments
