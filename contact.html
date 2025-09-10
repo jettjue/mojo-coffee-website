@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/mojo_transparent.png" type="image/png">
     <script src="https://kit.fontawesome.com/0fdfc7d1a8.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Pompiere&display=swap" rel="stylesheet">
-</head>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Pompiere&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 <body>
     <header>
         <div class="logo">
@@ -34,6 +34,94 @@
 
     </header>
 
+    <main class="contact-page">
+        <!-- 
+        <form>
+            <label for="fname">First Name <span style="color: rgb(245, 60, 60)">*</span></labeL><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <labeL for="lname">Last Name <span style="color: rgb(245, 60, 60)">*</span></labeL><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <labeL for="email">Email <span style="color: rgb(245, 60, 60)">*</span></labeL><br>
+            <input type="email" id="email" name="email"><br>
+        </form>
+         -->
+            <!--Forms-->
+        <!--action="action_page.php" method="POST" can be used to send the form to another place-->
+        <!--id attribute is for hooking the element with CSS and JavaScript
+            name attribute is used in the HTTP request sent by the browser to the server as a variable name associased with the data contatined in the value attribute
+            for attribute specifies which form element a label is bound to— used for visually-impaired users-->
+
+
+        <section class="contact-info">
+            <h1>Get in touch with us!</h1>
+            <h2>Location</h2>
+
+            <h2>Hours</h2>
+            <h2>Contact</h2>
+
+
+
+
+
+
+
+
+        </section>
+
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <h1>How can we help?</h1>
+
+            <label class="name-label">Name (required)</label>
+            <div class="form-row">
+                <div class="form-block">
+                    <input type="text" id="fname" name="fname" placeholder="Spongebob" required>                      
+                    <label for="fname">First</label>
+                </div>
+                <div class="form-block">
+                    <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+                    <label for="lname">Last</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-block">
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" placeholder="spants@gmail.com" required>
+                </div>
+                <div class="form-block">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="preference">What's the best way to reach you?</label>
+                <select id="preference" name="preference">
+                    <option value="none">No preference</option>
+                    <option value="email">Email</option>
+                    <option value="call">Call</option>
+                    <option value="text">Text</option>
+
+                </select>
+            </div>
+
+            <div class="form-block">
+                <label for="comment">Please let us know how we can help (required):</label>
+                <textarea id-="comment" rows="5" cols="25"required></textarea>
+            </div>
+
+            
+            <div class="submit-block">
+                <input type="Submit" class="submit-btn">
+            </div>
+
+
+        </form>
+
+
+
+    </main>
 
 
 

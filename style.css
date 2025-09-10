@@ -118,7 +118,7 @@ article {
     padding: 10px;
 }
 
-section {
+.welcome-msg {
     text-align: left;
     margin-left: 115px;
     margin-top: 100px;
@@ -126,14 +126,14 @@ section {
     background-color: rgba(228, 218, 208, 0.7);
     width: 600px;
     font-size: 20px;
-    font-family: "Kalam";
+    font-family: "Noto Sans KR", sans-serif;
     border: black 2px solid;
 }
 
 footer {
     display: block;
     clear: both;
-    background-color: hsl(0, 0%, 86%);
+    background-color: #DFD0C0;
     text-align: center;
     padding: 25px;
     position: fixed;
@@ -153,10 +153,6 @@ footer {
         flex-direction: column;
     }
 
-    .navbar ul {
-        margin: 0;
-        padding: 0;
-    }
 }
 
 /* .navbar button { 
@@ -192,3 +188,70 @@ section {
 }
 */
 
+form {
+    margin: 0 auto;
+    width: 50%;
+    border: 2px black solid;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+
+.form-row {
+    /* border: 2px rgb(221, 65, 65) solid; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 25px;
+    width: 100%;
+}
+
+.form-block {
+    /* border: 2px rgb(70, 65, 221) solid; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea, select {
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-size: 100%;
+    border-style: solid;
+}
+
+.contact-info {
+    border: #625142 solid 2px;
+    width: 25%;
+}
+
+.submit-block {
+    width: 100%;
+}
+.submit-btn {
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-size: 100%;
+    border-style: solid;
+    width: 100%;
+    background-color: #803e0a;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #ad6833;
+    cursor: pointer;
+    transition: background-color ease 0.2s;
+}
+
+.submit-btn:active {
+    transform: scale(.99);
+}
