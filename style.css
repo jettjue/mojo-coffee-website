@@ -189,14 +189,14 @@ section {
 */
 
 form {
-    margin: 0 auto;
     width: 50%;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+    padding-top: 50px;
 }
 
 
@@ -227,9 +227,63 @@ input[type=text], input[type=email], input[type=tel], textarea, select {
     border-style: solid;
 }
 
+body.contact {
+    /* background-color: #DFD0C0; */
+    font-family: "lft-etica-mono", sans-serif;
+    font-weight: 300;
+
+}
+.contact-page {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 75px 0;
+    /* border: orange 4px solid; */
+
+}
+
 .contact-info {
-    border: #625142 solid 2px;
+    /* border: #3766b2 solid 4px; */
     width: 25%;
+}
+
+
+
+.contact-page h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.contact-page h2 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.contact-page p {
+    font-size: 20px;
+}
+.get-in-touch {
+    /* border: red 2px solid; */
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+address {
+    /* border: red 2px solid; */
+}
+
+.contact-specific {
+    /* border: 3px purple solid; */
+    margin-bottom: 100px;
+}
+
+.contact-specific p {
+    margin: 3px;
+}
+
+.contact-specific a {
+    color: inherit;
 }
 
 .submit-block {
@@ -255,3 +309,4 @@ input[type=text], input[type=email], input[type=tel], textarea, select {
 .submit-btn:active {
     transform: scale(.99);
 }
+
