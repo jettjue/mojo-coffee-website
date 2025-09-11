@@ -20,9 +20,9 @@ This project is being developed for the purpose of learning various technologies
 * Navbar with hover effects
 * User/shopping cart icons in the header
 * Background image with transparent overlay section
+* Contact information and submittable message form
 
 ## Features to Come
-* Contact information and submittable message form
 * Responsive layout for all screen sizes
 * Dynamic transitions and animations for enhanced UX/UI
 * Interactive shopping cart with checkout functionality using Stripe API for secure payments
